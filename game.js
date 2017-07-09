@@ -21,7 +21,7 @@ function scoreFrame (frame, secondFrame, thirdFrame) {
 
 function scoreGame (frames) {
   return frames.reduce(function(acc, item, i) {
-  return acc + scoreFrame(frames[i] + frames[i+1] + frames[i+2])
+  return acc + scoreFrame(frames[i], frames[i+1], frames[i+2])
 }, 0)
 }
 
